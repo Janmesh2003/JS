@@ -18,7 +18,7 @@ function my_name()
 function add ( num1, num2 ) 
 {
     // let sum = ( num1 + num2 );
-    console.log(`return ke phele jarru print hota hai `); /* yeh print hoga  */
+    // console.log(`return ke phele jarru print hota hai `); /* yeh print hoga  */
     return num1 + num2
     // return sum 
     console.log(`return ke baad print nhi hota`); /* yeh print nhi hoga okk */
@@ -29,8 +29,20 @@ function add ( num1, num2 )
 
 function Str (Username)
 {
-    return `${Username} logged in `
+    if( !Username ) /* yeh if statement se Yaadi "Username" function mai koi argument nhi 
+     diya tho if condition lagegi */
+    {
+        console.log(`plz enter your name `);
+        return 
+    }
+    return ` ${Username} logged in`
 }
 
-str ("janmesh")
- 
+// let Ptr = Str ("janmesh")
+// console.log(Ptr); /* yeh tho Tari hai hi sahi Function ko exciute
+// pr, Ek or bhi tari ha  wo mai nichhe batunga */
+ console.log(Str()); /* Yeh pr Argument nhi diye hai isliye if statement lagaya hai 
+ if nhi laga tha tho O/p => Undefined ata  */
+
+
+
