@@ -1,4 +1,5 @@
 // Immediately Invoked Function Expresssion
+//yeh fast Execute karne ke liye use hota hai 
 
 (function Add() {
 
